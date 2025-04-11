@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/custom" mode="merge"/>
+    <filter root="/content/custom" mode="merge"/>
+    <filter root="/content/dam/custom" mode="merge">
+<!--
+        <exclude pattern="/content/dam/custom(/.*)?"/>
+-->
+        <include pattern="/content/dam/custom/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/custom/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/custom" mode="merge"/>
+    <filter root="/content/dam/custom/office" mode="replace"/>
+    <filter root="/content/dam/custom/hello.jpg" mode="merge"/>
+    <!--<filter root="/content/dam/custom/office/caz.jpg" mode="merge"/>-->
+</workspaceFilter>
