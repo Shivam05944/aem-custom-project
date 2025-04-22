@@ -1,0 +1,9 @@
+<div data-sly-use.pageinfo="com.custom.core.models.PageInfo">
+    <div>
+        <h2>Filtered Pages: ${pageinfo.filteredPages}</h2>
+        <h2>Filtered Title: ${pageinfo.pageTitles}</h2>
+    </div>
+    <div data-sly-list.imageReference="${pageinfo.fileReference}">
+        <img src="${imageReference}" alt="Image ${imageReference}"/>
+    </div>
+</div>

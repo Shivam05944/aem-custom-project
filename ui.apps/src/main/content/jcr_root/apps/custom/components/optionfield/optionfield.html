@@ -1,0 +1,17 @@
+<div data-sly-use.optionfield="com.custom.core.models.OptionField">
+  <div>
+    <img src="${optionfield.image}"/>
+    <h3 class="header">${optionfield.header}</h3>
+    <h2 class="title">${optionfield.title}</h2>
+    <h2 class="description">${optionfield.description}</h2>
+    ${optionfield.subHeader @ context='html'}
+    <div class="form-item">
+      <div data-sly-list.item="${optionfield.forms}">
+        <a href="${item.imagePath}">
+          <img src="${item.imagePath}" alt="${item.imageTitle}"/>
+        </a>
+        <h3>${item.imageTitle}</h3>
+      </div>
+    </div>
+  </div>
+</div>
